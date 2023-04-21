@@ -12,7 +12,7 @@ if(!empty($id)) {
     require "./User.php";
 
     //Instanciar a classe e criar o objeto
-    $delete = new User();
+    $deleteUser = new User();
 
     //Enviar o id para o atributo da classe
     $deleteUser->id = $id;
