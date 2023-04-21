@@ -5,23 +5,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
     <title>Listar Herança Mysql</title>
+    <nav>
+        <a class="a-header" href="index.php">Listar</a><br>
+        <a class="a-header" href="create.php">Cadastrar</a>
+    </nav>
 </head>
 <body>
-
-    <a href="index.php">Listar</a><br>
-    <a href="create.php">Cadastrar</a><br>
     <h1>Listar Usuários</h1>
 
-    
     <?php
-
-    
     
     if(isset($_SESSION["msg"])){
         echo $_SESSION["msg"];
         unset($_SESSION["msg"]);
     }
+
     require "./Conn.php";
     require "./User.php";
 
@@ -31,13 +32,15 @@
     foreach ($result_users as $row_user) {
        extract($row_user);
 
-       echo "ID: $id <br>";
-       echo "Nome: $name <br>";
-       echo "E-mail: $email <br>";
-       echo "<a href='view.php?id=$id'>Visualizar</a> <br>";
-       echo "<a href='edit.php?id=$id'>Editar</a> <br>";
-       echo "<a href='delete.php?id=$id'>Apagar</a>";
+       echo "<div class='user-info'>";
+       echo "<p>ID: $id </p>";
+       echo "<p>Nome: $name </p>";
+       echo "<p>E-mail: $email </p> <br>";
+       echo "<a class='a-user-info' href='view.php?id=$id'>Visualizar</a> <br>";
+       echo "<a class='a-user-info' href='edit.php?id=$id'>Editar</a> <br>";
+       echo "<a class='a-user-info' href='delete.php?id=$id'>Apagar</a>";
        echo "<hr>";
+       echo "</div>";
     }
 
     ?>
