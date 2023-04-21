@@ -31,10 +31,10 @@ Selecione o banco de dados criado e clique em "Importar" na barra de menu superi
 
 Selecione o arquivo db.sql que está localizado na pasta raiz do projeto e clique em "Executar".
 
-# Executando o projeto
+# 6.0 Executando o projeto
 Por fim, inicie o servidor web XAMPP ou outro compatível com PHP 8 e navegue até a pasta do projeto em um navegador. O projeto deve estar acessível em http://localhost/seu-projeto/.
 
-# Uso
+# 7.0 Uso
 O projeto consiste em um CRUD de formulário com as seguintes funcionalidades:
 
 Criar formulário: Clique no botão "Novo Formulário" na página inicial e preencha o formulário com os dados desejados.
