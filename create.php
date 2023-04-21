@@ -7,12 +7,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
     <title>Cadastrar  | Herança Mysql</title>
 </head>
+    <nav>
+        <a href="index.php">Listar</a><br>
+        <a href="create.php">Cadastrar</a><br>
+    </nav>
 <body>
-    <a href="index.php">Listar</a><br>
-    <a href="create.php">Cadastrar</a><br>
     <h1>Cadastrar Usuário</h1>
     
     <?php
@@ -37,18 +40,17 @@
     }
     ?>
 
-    <form name="CreateUser" method="POST" action="">
+    <form class="form"name="CreateUser" method="POST" action="">
         <label>Nome: </label>
         <input type="text" name="name" 
         placeholder="Nome Completo" 
-        required /> <br> <br>
-
+        required /> 
         <label>Email: </label>
         <input type="email" name="email" 
         placeholder="E-mail" 
-        required /> <br> <br>
+        required /> 
 
-        <input type="submit" value="Cadastrar" name="SendAddUser">
+        <input class="input" type="submit" value="Cadastrar" name="SendAddUser">
     </form>
 </body>
 </html>
