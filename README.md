@@ -29,7 +29,7 @@ Crie um novo banco de dados com o nome "nome_do_banco_de_dados".
 
 Selecione o banco de dados criado e clique em "Importar" na barra de menu superior.
 
-Selecione o arquivo db.sql que está localizado na pasta raiz do projeto e clique em "Executar".
+Selecione o arquivo table.sql que está localizado na pasta raiz do projeto e clique em "Executar".
 
 # 6.0 Executando o projeto
 Por fim, inicie o servidor web XAMPP ou outro compatível com PHP 8 e navegue até a pasta do projeto em um navegador. O projeto deve estar acessível em http://localhost/seu-projeto/.
