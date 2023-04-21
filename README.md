@@ -1,9 +1,9 @@
 # Requisitos
 Antes de começar, certifique-se de ter as seguintes ferramentas instaladas em seu computador:
 
-Git
 XAMPP ou qualquer outro servidor web compatível com PHP 8.
-Clonando o projeto
+
+# Clonando o projeto
 Para começar, abra o terminal e navegue até a pasta onde deseja clonar o projeto. Em seguida, execute o seguinte comando:
 
 
