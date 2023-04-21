@@ -9,12 +9,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Visualizar Herança Mysql</title>
 </head>
-<body>
-
+<nav>
     <a href="index.php">Listar</a><br>
     <a href="create.php">Cadastrar</a><br>
+</nav>
+<body>
     <h1>Detalhes do Usuário</h1>
 
     
@@ -33,22 +35,23 @@
         $viewUser->id = $id;
         $valueUser = $viewUser->view();
         extract($valueUser);
-        echo "ID do usuário: $id <br>";
-        echo "Nome do usuário: $name <br>";
-        echo "E-mail do usuário: $email <br>";
-        echo "Usuário criado em: " . date("d/m/Y H:i:s",
-        strtotime($createdAt))." <br>";
 
-        echo "Última atualização do usuário: ";
+        echo "<div class='user-info-view'>";
+        echo "<p>ID: $id </p>";
+        echo "<p>Nome: $name </p>";
+        echo "<p>E-mail: $email </p>";
+        echo "<p>Usuário criado em: " . date("d/m/Y H:i:s </p> " ,
+        strtotime($createdAt))."<br>";
+
+        echo "Última atualização: ";
         if(!empty($updatedAt)){
             echo date("d/m/Y H:i:s",
             strtotime($updatedAt));
         }else{
             echo "Sem atualização";
         }
-        echo "<br>";
+        echo "</div>";
     
-
     }else{
         $_SESSION['msg'] =  "<p style='color: #f00;'>Usuário não encontrado!</p>";
         header("Location: index.php");
