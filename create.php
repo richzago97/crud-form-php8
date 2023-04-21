@@ -32,7 +32,7 @@
 
         if($value){
             $_SESSION['msg'] =  "<p style='color: 
-            ##7FFF00;'>Usuário cadastrado com sucesso!</p>";
+            #7FFF00;'>Usuário cadastrado com sucesso!</p>";
             header("Location: index.php");
         }else{
             echo "<p style='color: #f00;'>Erro ao cadastrar o usuário </p>"; 
