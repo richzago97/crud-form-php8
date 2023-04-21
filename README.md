@@ -3,10 +3,6 @@ Antes de começar, certifique-se de ter as seguintes ferramentas instaladas em s
 
 XAMPP ou qualquer outro servidor web compatível com PHP 8.
 
-# Clonando o projeto
-Para começar, abra o terminal e navegue até a pasta onde deseja clonar o projeto. Em seguida, execute o seguinte comando:
-
-
 # Instalando as dependências
 O projeto utiliza o Composer para gerenciar suas dependências. Para instalá-lo, basta seguir as instruções no site oficial: https://getcomposer.org/download/.
 
