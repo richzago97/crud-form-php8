@@ -22,7 +22,7 @@ if(!empty($id)) {
 
     if($value){
         $_SESSION["msg"] =  "<p style='color: 
-        ##7FFF00;'>Erro: Usuário apagado com sucesso!</p>";
+        #7FFF00;'>Usuário apagado com sucesso!</p>";
         header("Location: index.php");
     }else{
         $_SESSION["msg"] =  "<p style='color: 
