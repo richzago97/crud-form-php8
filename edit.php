@@ -9,12 +9,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Edit Herança Mysql</title>
 </head>
-<body>
-
+<nav>
     <a href="index.php">Listar</a><br>
     <a href="create.php">Cadastrar</a><br>
+</nav>
+<body>
+
+   
+
     <h1>Editar o Usuário</h1>
 
     
@@ -56,7 +61,7 @@
 
         ?>
 
-            <form name="EditUser" method="POST" action="">
+            <form class="form" name="EditUser" method="POST" action="">
                 <input type="hidden" name="id" 
                 value="<?php echo $id;?>" />
 
@@ -64,15 +69,15 @@
                 <input type="text" name="name" 
                 placeholder="Nome Completo" 
                 value="<?php echo $name;?>"
-                required /> <br> <br>
+                required /> 
 
                 <label>Email: </label>
                 <input type="email" name="email" 
                 placeholder="E-mail" 
                 value="<?php echo $email;?>"
-                required /> <br> <br>
+                required /> 
 
-                <input type="submit" value="Editar" name="SendEditUser">
+                <input class="input" type="submit" value="Editar" name="SendEditUser">
             </form>
 
         <?php
